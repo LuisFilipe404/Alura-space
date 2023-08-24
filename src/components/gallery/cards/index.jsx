@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import fotos from "../fotos.json";
 import open from "../../../assets/open.png";
 import favorito from "../../../assets/favorito.png";
 
 export default function Cards() {
+  const [items, setItems] = useState(fotos);
   return (
     <ul className="galeria__cards">
       {fotos.map((foto) => {
